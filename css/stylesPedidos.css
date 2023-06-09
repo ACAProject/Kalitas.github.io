@@ -3,33 +3,44 @@ body{
     font-family: Arial, Helvetica;
 }
 
-.menuDeNavegacion{
-    list-style: none;
-    padding: 0;
-    background-color: #e8e39e;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    text-align: auto;
+.flexContainer{
+  display: flex;
+  background-color: #F4EAD5;
+  line-height: 0px;
+  width: 100%;
+  place-content: left;
 }
 
-.menuDeNavegacion li a{
-    text-decoration: none;
-    color: black;
-    padding: 20px;
-    display: block;
+.flexItem{
+    background-color: #F4EAD5;
+  width: 160px;
+  margin: 0px;
+  text-align: center;
+  line-height: 65px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
 
-.menuDeNavegacion li{
-    display: inline-block;
-    text-align: center;
+.flexItemLogoKalita{
+  width: 80px;
+  margin: 0px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.menuDeNavegacion li a:hover{
-    background-color: #959265;
+.flexContainer a:hover{
+    background-color: #ADB58F;
     color: white;
 }
 
-.kalitaLogoPedidos{
-    
+.buttonHacerPedido{
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  width: 15%;
 }

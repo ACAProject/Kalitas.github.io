@@ -1,39 +1,45 @@
 body{
-    background-color: #4B4B4B;
-    font-family: Arial, Helvetica;
+  background-color: #4B4B4B;
+  font-family: Arial, Helvetica;
 }
 
 .flexContainer{
-    display: flex;
-  background-color: white;
-  line-height: 0px;
+display: flex;
+background-color: #F4EAD5;
+line-height: 0px;
+width: 100%;
+place-content: left;
 }
 
 .flexItem{
-    background-color: white;
-  width: 200px;
-  margin: 0.5px;
-  text-align: center;
-  line-height: 70px;
-  font-size: 20px;
-  text-decoration: none;
+  background-color: #F4EAD5;
+width: 160px;
+margin: 0px;
+text-align: center;
+line-height: 65px;
+font-size: 20px;
+text-decoration: none;
+color: black;
+font-weight: bolder;
 }
 
 .flexItemLogoKalita{
-  width: 100px;
-  margin: 2px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 20px;
-  text-decoration: none;
+width: 80px;
+margin: 0px;
+text-align: center;
+line-height: 20px;
+font-size: 20px;
+text-decoration: none;
+display: inline-block;
 }
 
 .flexContainer a{
-    
+  
 }
 
 .flexContainer a:hover{
-    background-color: #ADB58F;
-    color: white;
+  background-color: #ADB58F;
+  color: white;
 }
+
 
