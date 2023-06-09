@@ -33,9 +33,7 @@ body{
   display: inline-block;
 }
 
-.flexContainer a{
-    
-}
+
 
 .flexContainer a:hover{
     background-color: #ADB58F;
@@ -51,3 +49,4 @@ body{
   margin: auto;
   justify-content: center;
 }
+
