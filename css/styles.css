@@ -7,8 +7,18 @@ body{
   display: flex;
   background-color: #F4EAD5;
   line-height: 0px;
-  width: 100%;
+  width: 99.5%;
   place-content: left;
+  position: absolute;
+}
+
+.flexContainerCS{
+  display: flex;
+  background-color: #F4EAD5;
+  line-height: 0px;
+  width: 5%;
+  position: absolute;
+  left: 80%;
 }
 
 .flexItem{
@@ -21,6 +31,21 @@ body{
   text-decoration: none;
   color: black;
   font-weight: bolder;
+
+}
+
+.flexItemCS{
+  background-color: #F4EAD5;
+width: 160px;
+margin: 0px;
+text-align: center;
+line-height: 65px;
+font-size: 20px;
+text-decoration: none;
+color: black;
+font-weight: bolder;
+position: absolute;
+left: 100%;
 }
 
 .flexItemLogoKalita{
@@ -31,10 +56,6 @@ body{
   font-size: 20px;
   text-decoration: none;
   display: inline-block;
-}
-
-.flexContainer a{
-    
 }
 
 .flexContainer a:hover{
