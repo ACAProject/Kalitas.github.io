@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap'); /*Importa fuente de texto JULUIS SANS ONE*/
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap'); /*Imoporta fuente de texto Ephesis*/
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap'); /* Importa fuente de texto abeezee */
 
 body{
     background-color: #334334;
@@ -31,6 +33,14 @@ h1 {
     height: 55px;
     margin-right: 10px; /* Espacio entre el logo y el contenido */
     padding-left: 10px;
+
+    transition: all 0.3s;
+}
+
+.logo img:hover {
+    opacity: 90%;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 
 .menu ul {
@@ -58,7 +68,7 @@ h1 {
     color: #fff;
     background-color: #817355;
     border-radius: 4px;
-    padding: 26px 22px;
+    padding: 27px 22px;
     transition: all 0.25s;
 }
 
@@ -69,12 +79,220 @@ h1 {
 .index-section1 {
     width: 100%;
     height: 1000px;
-    background-color: #fff;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    opacity: 90%;
+}
+
+.img-pantalon-sec1 {
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
+
+.logoKalitas-index-sec1 {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 4%;
+}
+
+.button-index-section1 {
+    position: absolute; 
+    top: 62%; 
+    text-decoration: none; 
+    background-color: #fff; 
+    font-family: 'Julius Sans One'; 
+    padding: 22px 32px; color: #000;
+     border-radius: 2px; 
+     transition: all 0.3s;
+
+}
+
+.button-index-section1:hover {
+    background-color: #000000;
+    color: #fff;
+    transform: scale(1.05);
+    transition: all 0.3s;
 }
 
 /* INICIO-SECTION1 */
 
+/* INICIO-SECTION2 */
+
+.index-section2 {
+    width: 100%;
+    height: 800px;
+    background-color: #F8FFED;
+    margin: 0;
+}
+
+.container-img-section2 {
+    width: 100%;
+    height: 570px;
+    border: 1px solid black transparent;
+
+    box-sizing: border-box;
+    position: relative;
+    top: 8%;
+
+    justify-content: center;
+    display: flex;
+}
+
+.card-img-section2 {
+    width: 28%;
+    height: 75%;
+    border: 1px solid red transparent;
+
+    box-sizing: border-box;
+    margin: 0 100px;
+    transition: all 0.2s;
+
+}
+
+.button-vermas-section2 {
+    position: absolute; 
+    left: 25%;
+    top: 80%;
+    transition: all 0.3s;
+    border: 5px;
+
+    background-color: #000;
+    color: white;
+    padding: 20px 32px;
+    text-decoration: none;
+    font-family: 'Julius Sans One';
+}
+
+.button-vermas2-section2 {
+    position: absolute; 
+    right: 25%;
+    top: 80%;
+    transition: all 0.3s;
+    border: 5px;
+
+    background-color: #000;
+    color: white;
+    padding: 20px 32px;
+    text-decoration: none;
+    font-family: 'Julius Sans One';
+}
+
+.button-vermas-section2:hover {
+     background-color: #3a3a3a;
+     transition: all 0.3s;
+     transform: scale(1.01);
+}
+
+.button-vermas2-section2:hover {
+    background-color: #3a3a3a;
+    transition: all 0.3s;
+    transform: scale(1.01);
+}
+
+.card-img-section2:hover {
+    transform: scale(1.02);
+    transition: all 0.2s;
+    opacity: 90%;
+}
+
+/* INICIO-SECTION2 */
+
+/* INICIO-SECTION3 */
+
+.index-section3 {
+width: 100%;
+height: 900px;
+background-color: #718452;
+}
+
+.container-mapa-index {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 8%;
+    display: flex;
+    place-content: center;
+    
+    border: 1px solid black transparent;
+    box-sizing: border-box;
+}
+
+/* INICIO-SECTION3 */
 
 
+/* APARTADO-CATALOGO */
+
+.catalogo-section {
+    width: 100%;
+    height: 2100px;
+    background-color: #FFFDF7;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container-img-catalogo {
+    width: 100%;
+    height: 75%;
+    box-sizing: border-box;
+
+    position: relative;
+    top: 24%;
+    display: block;
+    justify-content: center;
+
+    border: 1px solid black transparent;
+    box-sizing: border-box;
+}
+
+.sub-container-img-catalogo {
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+
+
+    border: 1px solid red transparent;
+    box-sizing: border-box;
+}
+
+img {
+    transition: all  0.3s;
+}
+
+.sub-container-img-catalogo img:hover {
+    opacity: 85%;
+    transform: scale(1.01);
+    transition: all  0.2s;
+}
+
+/* APARTADO-CATALOGO */
+
+
+/*FOOTER*/
+
+.footer {
+    margin: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #3A5335;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*FOOTER*/
 
 
