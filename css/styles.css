@@ -206,19 +206,17 @@ h1 {
 
 .index-section3 {
 width: 100%;
-height: 900px;
+height: 1100px;
 background-color: #718452;
 }
 
 .container-mapa-index {
     width: 100%;
-    height: 80%;
+    height: 85%;
     position: relative;
     top: 8%;
     display: flex;
     place-content: center;
-    
-    border: 1px solid black transparent;
     box-sizing: border-box;
 }
 
@@ -278,6 +276,48 @@ img {
 }
 
 /* APARTADO-CATALOGO */
+
+
+/* APARTADO-SOBRENOSOTROS */
+
+
+.nosotros-section1 {
+    width: 100%;
+    height: 400px;
+    background-color: #3A5335;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
+}
+
+.img-sobrenosotros-section1 {
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
+
+.nosotros-section1 p{
+    font-family: 'ABeeZee';
+    position: absolute;
+    opacity: 100%;
+    font-size: 50px;
+    color: #fff;
+    z-index: 1;
+}
+
+.nosotros-section2 {
+    width: 100%;
+    height: 1200px;
+    background-color: #F8FFCD;
+}
+
+/* APARTADO-SOBRENOSOTROS */
+
+
+
 
 
 /*FOOTER*/
