@@ -310,9 +310,12 @@ img {
 
 .nosotros-section2 {
     width: 100%;
-    height: 1200px;
+    height: 800px;
     background-color: #F8FFCD;
+    
 }
+
+
 
 /* APARTADO-SOBRENOSOTROS */
 
@@ -327,6 +330,7 @@ img {
     width: 100%;
     height: 120px;
     background-color: #3A5335;
+    line-height: 160%;
 
     display: flex;
     align-items: center;
