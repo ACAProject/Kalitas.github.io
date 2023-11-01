@@ -147,7 +147,7 @@ h1 {
 .card-img-section2 {
     width: 28%;
     height: 75%;
-    border: 1px solid red transparent;
+    border: 1px solid red ;
 
     box-sizing: border-box;
     margin: 0 100px;
@@ -201,6 +201,16 @@ h1 {
     opacity: 90%;
 }
 
+.h1-index-section2 {
+    font-family: 'Ephesis', cursive; 
+    font-size: 85px; 
+    font-weight: 500; 
+    width: 590px; 
+    position: relative; 
+    left: 5%; 
+    top: 5%;
+}
+
 /* INICIO-SECTION2 */
 
 /* INICIO-SECTION3 */
@@ -209,6 +219,10 @@ h1 {
 width: 100%;
 height: 1100px;
 background-color: #718452;
+
+display: flex;
+justify-content: center;
+padding: 90px 0 0 0;
 }
 
 .container-mapa-index {
@@ -219,6 +233,35 @@ background-color: #718452;
     display: flex;
     place-content: center;
     box-sizing: border-box;
+}
+
+.h1-index-section3 {
+    font-size: 40px; 
+    position: absolute; 
+    color: #fff; 
+    font-weight: 500; 
+    font-family: 'ABeeZee'; 
+    width: auto;
+    border: 1px solid red;
+}
+
+.p1-index-section3 {
+    position: absolute; 
+    top: 60%; 
+    left: 13%; 
+    font-size: 50px; 
+    font-family: 'AbeeZee'; 
+    color: #fff;
+}
+
+.p2-index-section3 {
+    position: absolute; 
+    top: 70%; 
+    left: 15%; 
+    font-size: 30px; 
+    font-family: 'Martel Sans';
+     color: #fff; 
+     line-height: 170%;
 }
 
 /* INICIO-SECTION3 */
@@ -339,5 +382,81 @@ img {
 }
 
 /*FOOTER*/
+
+
+
+/*===================== MEDIA QUERIS =========================*/
+
+@media (max-width: 650px) {
+
+    /*INICIO*/
+
+    .index-section2 h1 {
+        font-size: 50px;
+        width: 400px;
+    }
+
+    .index-section3 h1 {
+        font-size:30px;
+        width: auto;
+    }
+
+    .index-section3 .container-mapa-index .p1-index-section3 {
+        width: auto;
+        font-size: 25px;
+        text-align: center;
+        top: 65%;
+        left: 35%;
+    }
+
+    .index-section3 .container-mapa-index .p2-index-section3 {
+        width: auto;
+        font-size: 25px;
+        text-align: center;
+        left: 20%;
+        top: 70%;
+    }
+
+    .index-section3 {
+        height: 900px;
+    }
+
+    .logoKalitas-index-sec1 {
+        width: 400px;
+        height: 400px;
+        top: 15%;
+    }
+
+    .card-img-section2 {
+        width: 100%;
+        height: 65%;
+        margin: 0;
+    
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .menu li {
+        margin-right: 10px; /* Espacio entre elementos del menú */
+        position: relative;
+        right: 2%;
+        transition: all 0.25s;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+
+}
+
+
+
+/*===================== MEDIA QUERIS =========================*/
 
 
