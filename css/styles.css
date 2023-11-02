@@ -73,6 +73,18 @@ h1 {
     transition: all 0.25s;
 }
 
+.menu-icon img{
+width: 30px;
+height: 30px;
+border-radius: 2px;
+}
+
+.menu-icon, #check{
+    display: none;
+}
+
+
+
 /* NAVBAR */
 
 /* INICIO-SECTION1 */
@@ -147,12 +159,11 @@ h1 {
 .card-img-section2 {
     width: 28%;
     height: 75%;
-    border: 1px solid red ;
+    border: 1px solid red transparent;
 
     box-sizing: border-box;
     margin: 0 100px;
     transition: all 0.2s;
-
 }
 
 .button-vermas-section2 {
@@ -205,7 +216,7 @@ h1 {
     font-family: 'Ephesis', cursive; 
     font-size: 85px; 
     font-weight: 500; 
-    width: 590px; 
+    width: 590px;
     position: relative; 
     left: 5%; 
     top: 5%;
@@ -242,7 +253,7 @@ padding: 90px 0 0 0;
     font-weight: 500; 
     font-family: 'ABeeZee'; 
     width: auto;
-    border: 1px solid red;
+    border: 1px solid red transparent;
 }
 
 .p1-index-section3 {
@@ -267,11 +278,11 @@ padding: 90px 0 0 0;
 /* INICIO-SECTION3 */
 
 
-/* APARTADO-CATALOGO */
+/* APARTADO-CATALOGO */ /*****************************************************/
 
 .catalogo-section {
     width: 100%;
-    height: 2100px;
+    height: 2400px;
     background-color: #FFFDF7;
     
     position: relative;
@@ -288,6 +299,7 @@ padding: 90px 0 0 0;
     top: 24%;
     display: block;
     justify-content: center;
+    align-items: center;
 
     border: 1px solid black transparent;
     box-sizing: border-box;
@@ -307,6 +319,31 @@ padding: 90px 0 0 0;
 
     border: 1px solid red transparent;
     box-sizing: border-box;
+}
+
+.img-catalogosection {
+    width: 35%; 
+    height: 80%; 
+    margin: 0 60px;
+}
+
+.p1-catalogosection {
+    font-family: 'Julius Sans One'; 
+    margin: 0; 
+    font-size: 35px; 
+    position: absolute; 
+    top: 9%;
+    text-align: center;
+}
+
+.p2-catalogosection {
+    font-family: 'Julius Sans One'; 
+    margin: 0; 
+    font-size: 25px; 
+    position: absolute; 
+    top: 14%; 
+    width: auto; 
+    text-align: center;
 }
 
 img {
@@ -359,6 +396,29 @@ img {
     
 }
 
+.p1-nosotros-section2 {
+    font-family: 'ABeeZee'; 
+    font-size: 50px; 
+    color: #3A5335; 
+    margin: 0; 
+    position: relative; 
+    left: 5%; 
+    top: 7%; 
+    width: 42%;
+}
+
+.p2-nosotros-section2 {
+    font-family: 'Martel Sans'; 
+    font-size: 30px; 
+    color: #3A5335; 
+    margin: 0; 
+    position: relative; 
+    left: 5%; 
+    top: 8%; 
+    width: 72%; 
+    text-align: left; 
+    line-height: 130%;
+}
 
 
 /* APARTADO-SOBRENOSOTROS */
@@ -384,16 +444,27 @@ img {
 /*FOOTER*/
 
 
+/*================================================================== MEDIA QUERIS  ====================================================================================*/
 
-/*===================== MEDIA QUERIS =========================*/
-
-@media (max-width: 650px) {
+@media (max-width: 768px) { /* .............................................. MEDIA 768 PIXELES ......................................................*/
 
     /*INICIO*/
 
+    .br-nosotros {
+        display: none;
+    }
+
+    .index-section1 {
+        height: 650px;
+    }
+
+    .button-index-section1 {
+        top: 70%;
+    }
+
     .index-section2 h1 {
         font-size: 50px;
-        width: 400px;
+        width: 340px;
     }
 
     .index-section3 h1 {
@@ -405,7 +476,7 @@ img {
         width: auto;
         font-size: 25px;
         text-align: center;
-        top: 65%;
+        top: 72%;
         left: 35%;
     }
 
@@ -414,7 +485,7 @@ img {
         font-size: 25px;
         text-align: center;
         left: 20%;
-        top: 70%;
+        top: 77%;
     }
 
     .index-section3 {
@@ -449,11 +520,305 @@ img {
     }
 
     .navbar {
-        height: 120px;
+        height: 60px;
+    }
+
+    .button-vermas-section2 {
+        left: 15%;
+        top: 60%;
+    }
+
+    .button-vermas2-section2 {
+        right: 15%;
+        top: 60%;
+    }
+
+    /* BUTTON MENU */
+
+    .checkbtn {
+        display: block;
+    }
+
+    .menu a{
+        color: #000000;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 2;
     }
 
 
+    .menu-icon {
+        width: 48px;
+        height: 48px;
+        display: block;
+        position: fixed;
+        top: 16px;
+        right: 45px;
+        z-index: 2;
+
+        background-color: #ababab9e;
+        border-radius: 3px;
+        display: flex;
+        place-content: center;
+        align-items: center;
+    }
+
+
+    .navbar ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        background-color: #222;
+        width: 100%;
+        height: 100vh;
+        left: 100%;
+        color: white;
+        transition: all 0.3s;
+
+        z-index: 2;
+    }
+
+    .navbar ul li { /* Elementos de la lista */
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        color: white;
+        background-color: #F4EAD5;
+        top: 20vh;
+        left: 0.01vh;
+
+        z-index: 2;
+    }
+
+    .navbar ul li:last-child {
+        background-color: none;
+        
+
+        z-index: 2;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        z-index: 2;
+        transition: all 0.3s;
+    }
+
+    .container-img-section2 {
+        width: 100%;
+        height: 400px;
+        border: 1px solid black transparent;
+    
+        box-sizing: border-box;
+        position: relative;
+        top: 8%;
+    
+        justify-content: center;
+        display: flex;
+    }
+    
+    .card-img-section2 {
+        height: 45%;
+    }
+    
+    .index-section2 {
+        width: 100%;
+        height: 500px;
+        background-color: #F8FFED;
+        margin: 0;
+    }
+
+    
+
+    /* BUTTON MENU */
+
+
+
+    /* NOSOTROS */
+
+    .p1-nosotros-section2 {
+        
+        font-size: 40px; 
+       
+    }
+    
+    .p2-nosotros-section2 {
+        font-family: 'Martel Sans'; 
+        font-size: 20px; 
+    }
+
+
+
+    /* CATALOGO */ /**********************************************************/
+
+.catalogo-section {
+    height: 1200px;
 }
+
+.container-img-catalogo {
+height: 80%;
+width: 100%;
+}
+
+.sub-container-img-catalogo {
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+    border: 1px solid red transparent;
+    box-sizing: border-box;
+}
+
+.img-catalogosection {
+    width: 40%; 
+    height: 90%; 
+    margin: 0 30px;
+}
+
+
+.p1-catalogosection {
+    font-family: 'Julius Sans One'; 
+    margin: 0; 
+    font-size: 28px; 
+    position: absolute; 
+    top: 10%;
+    text-align: center;
+}
+
+.p2-catalogosection {
+    font-family: 'Julius Sans One'; 
+    margin: 0; 
+    font-size: 18px; 
+    position: absolute; 
+    top: 18%; 
+    width: auto; 
+    text-align: center;
+}
+    
+    /* CATALOGO */
+
+
+} /* .............................................. MEDIA 768 PIXELES ......................................................*/
+
+
+
+@media (max-width: 425px) { /* .............................................. MEDIA 425 PIXELES ......................................................*/
+
+    .br-nosotros {
+        display: none;
+    }
+
+    .button-vermas-section2 {
+        left: 5%;
+    }
+
+    .button-vermas2-section2 {
+        right: 5%;
+    }
+
+    .index-section2 h1 {
+        font-size: 50px;
+        width: 400px;
+    }
+
+    .index-section3 h1 {
+        font-size:30px;
+        width: auto;
+    }
+
+    .index-section3 .container-mapa-index .p1-index-section3 {
+        width: auto;
+        font-size: 25px;
+        text-align: center;
+        top: 72%;
+        left: 27%;
+    }
+
+    .index-section3 .container-mapa-index .p2-index-section3 {
+        width: auto;
+        font-size: 25px;
+        text-align: center;
+        left: 8%;
+        top: 77%;
+    }
+
+    .index-section2 h1 {
+        font-size: 35px;
+        width: 250px;
+    }
+
+    .logoKalitas-index-sec1 {
+        top: 30%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .p2-nosotros-section2 {
+        font-size: 15px;
+    }
+
+    .nosotros-section2 {
+        height: 900px;
+    }
+
+    .catalogo-section {
+        height: 1000px;
+    }
+
+    .container-img-catalogo {
+        height: 70%;
+        width: 100%;
+        top: 30%;
+        }
+        
+        .sub-container-img-catalogo {
+            width: 100%;
+            height: 30%;
+            box-sizing: border-box;
+        
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        
+            border: 1px solid red transparent;
+            box-sizing: border-box;
+        }
+        
+        .img-catalogosection {
+            width: 45%; 
+            height: 85%; 
+            margin: 0 12px;
+        }
+
+        .p1-catalogosection {
+            font-family: 'Julius Sans One'; 
+            margin: 0; 
+            font-size: 20px; 
+            position: absolute; 
+            top: 14%;
+            text-align: center;
+        }
+
+        .p2-catalogosection {
+            font-family: 'Julius Sans One'; 
+            margin: 0; 
+            font-size: 15px; 
+            position: absolute; 
+            top: 22%; 
+            width: auto; 
+            text-align: center;
+        }
+} /* .............................................. MEDIA 425 PIXELES ......................................................*/
 
 
 
