@@ -651,8 +651,7 @@ img {
 
 
 
-    /* CATALOGO */ /**********************************************************/
-
+    /* CATALOGO */
 .catalogo-section {
     height: 1200px;
 }
@@ -709,12 +708,55 @@ width: 100%;
 } /* .............................................. MEDIA 768 PIXELES ......................................................*/
 
 
+@media (max-width: 1220px) {
+    .p1-nosotros-section2 {
+        width: 50%;
+        font-size: 50px; 
+       
+    }
+    
+    .p2-nosotros-section2 {
+        font-family: 'Martel Sans'; 
+        font-size: 25px; 
+    }
+}
+
+@media (max-width: 875px) {
+    .p1-nosotros-section2 {
+        width: 50%;
+        font-size: 40px; 
+       
+    }
+    
+    .p2-nosotros-section2 {
+        font-family: 'Martel Sans'; 
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 615px) {
+    .p1-nosotros-section2 {
+        width: 50%;
+        font-size: 38px; 
+       
+    }
+    
+    .p2-nosotros-section2 {
+        font-family: 'Martel Sans'; 
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 545px) {
+   .nosotros-section2 {
+    height: 900px;
+   }
+}
+
+
+
 
 @media (max-width: 425px) { /* .............................................. MEDIA 425 PIXELES ......................................................*/
-
-    .br-nosotros {
-        display: none;
-    }
 
     .button-vermas-section2 {
         left: 5%;
@@ -820,6 +862,12 @@ width: 100%;
         }
 } /* .............................................. MEDIA 425 PIXELES ......................................................*/
 
+
+@media (max-width: 325px) {
+    .nosotros-section2 {
+     height: 950px;
+    }
+ }
 
 
 /*===================== MEDIA QUERIS =========================*/
