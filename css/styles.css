@@ -570,7 +570,8 @@ img {
         display: block;
         position: fixed;
         top: 70px;
-        background-color: #222;
+        background-color: #323232;
+        opacity: 98%;
         width: 100%;
         height: 100vh;
         left: 100%;
@@ -586,6 +587,7 @@ img {
         justify-content: center;
         margin: 0;
         color: white;
+        opacity: 100%;
         background-color: #F4EAD5;
         top: 20vh;
         left: 0.01vh;
@@ -748,6 +750,12 @@ width: 100%;
 }
 
 @media (max-width: 545px) {
+
+    .nosotros-section1 p{
+        font-size: 35px;
+        top: 40%;
+    }
+
    .nosotros-section2 {
     height: 900px;
    }
@@ -862,6 +870,13 @@ width: 100%;
         }
 } /* .............................................. MEDIA 425 PIXELES ......................................................*/
 
+@media (max-width: 385px) {
+
+    .nosotros-section1 p{
+        font-size: 26px;
+        top: 48%;
+    }
+}
 
 @media (max-width: 325px) {
     .nosotros-section2 {
